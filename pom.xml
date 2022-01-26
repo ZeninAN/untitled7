@@ -36,12 +36,6 @@
             <version>7.5</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.2</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -49,9 +43,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
-                <configuration>
-                    <failIfNoTests>true</failIfNoTests>
-                </configuration>
             </plugin>
             <plugin>
             <groupId>org.jacoco</groupId>
@@ -59,14 +50,13 @@
             <version>0.8.5</version>
                 <executions>
                 <execution>
-                    <id>prepare-agent</id>
+                    <id>prepare-agent4</id>
                     <goals>
                         <goal>prepare-agent</goal>
                     </goals>
                 </execution>
                 <execution>
-                    <id>report</id>
-                    <phase>verify</phase>
+                    <id>report3</id>
                     <goals>
                         <goal>report</goal>
                     </goals>
